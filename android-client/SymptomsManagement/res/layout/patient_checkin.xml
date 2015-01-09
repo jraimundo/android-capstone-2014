@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <TextView
+        android:id="@+id/textView1"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/patient_checkin_pain_section" />
+
+    <RadioGroup
+        android:id="@+id/patient_checkin_pain_level_radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/patient_checkin_pain_level_controlled_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/patient_checkin_pain_level_controlled" />
+
+        <RadioButton
+            android:id="@+id/patient_checkin_pain_level_moderate_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/patient_checkin_pain_level_moderate" />
+
+        <RadioButton
+            android:id="@+id/patient_checkin_pain_level_severe_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/patient_checkin_pain_level_severe" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView2"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/patient_checkin_eat_section" />
+
+    <RadioGroup
+        android:id="@+id/patient_checkin_eat_level_radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/patient_checkin_eat_level_no_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/patient_checkin_eat_level_no" />
+
+        <RadioButton
+            android:id="@+id/patient_checkin_eat_level_some_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/patient_checkin_eat_level_some" />
+
+        <RadioButton
+            android:id="@+id/patient_checkin_eat_level_cant_eat_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/patient_checkin_eat_level_cant_eat" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:text="@string/patient_checkin_medications_taken" />
+
+    <ListView
+        android:id="@+id/android:list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.30" >
+
+    </ListView>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:textSize="14sp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_checkin_set_time"
+            android:layout_width="fill_parent"
+	        android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/button_action_set_time" />
+        
+        
+        <Button
+	        android:id="@+id/button_checkin_save_button"
+	        android:layout_width="fill_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:text="@string/button_action_save" />
+    </LinearLayout>
+
+</LinearLayout>

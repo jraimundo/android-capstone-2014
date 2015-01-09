@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.coursera.androidcapstone.symptomsmanagement"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo.Light" >
+        <activity
+            android:name="org.coursera.symptomsmanagement.ui.doctor.PatientsListActivity"
+            android:label="@string/title_frame_main" >
+        </activity>
+        <activity
+            android:name="org.coursera.symptomsmanagement.ui.doctor.PatientDetailActivity"
+            android:label="@string/title_frame_main" >
+        </activity>
+        <activity
+            android:name="org.coursera.symptomsmanagement.ui.doctor.MedicationDetailActivity"
+            android:label="@string/title_activity_medication_detail" >
+        </activity>
+        <activity
+            android:name="org.coursera.symptomsmanagement.ui.patient.HomeActivity"
+            android:label="@string/title_activity_home" >
+        </activity>
+        <activity
+            android:name="org.coursera.symptomsmanagement.ui.patient.CheckInActivity"
+            android:label="@string/title_activity_patient_new_checkin" >
+        </activity>
+        <activity
+            android:name="org.coursera.symptomsmanagement.ui.MainActivity"
+            android:label="@string/title_frame_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.coursera.symptomsmanagement.ui.patient.SettingsActivity"
+            android:label="@string/title_activity_patient_settings" >
+        </activity>
+        
+        <receiver android:name="org.coursera.symptomsmanagement.tools.AlarmNotificationReceiver1">
+        </receiver>
+        <receiver android:name="org.coursera.symptomsmanagement.tools.AlarmNotificationReceiver2">
+        </receiver>
+        <receiver android:name="org.coursera.symptomsmanagement.tools.AlarmNotificationReceiver3">
+        </receiver>
+        <receiver android:name="org.coursera.symptomsmanagement.tools.AlarmNotificationReceiver4">
+        </receiver>
+        
+<!--         <receiver android:name="org.coursera.symptomsmanagement.tools.DataDownloadReceiver" -->
+<!--             android:exported="false"> -->
+<!--             <intent-filter> -->
+<!--                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/> -->
+<!--             </intent-filter> -->
+<!--         </receiver> -->
+    </application>
+
+</manifest>

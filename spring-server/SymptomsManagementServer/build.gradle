@@ -1,0 +1,58 @@
+buildscript {
+	ext {
+		springBootVersion = '1.1.8.RELEASE'
+	}
+	
+	repositories {
+        maven { url "http://repo.spring.io/libs-snapshot" }
+    }
+	
+	dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'spring-boot'
+apply plugin: 'war'
+
+sourceCompatibility = 1.7
+
+compileJava {
+    targetCompatibility = 1.7
+}
+
+war {
+    baseName = 'SymptomsManagement'
+    version =  '0.1.0'
+}
+
+repositories {
+	mavenCentral()
+	maven { url "http://repo.spring.io/libs-release" }
+	maven { url "http://maven.springframework.org/milestone" }
+}
+
+dependencies {
+	compile("org.springframework.boot:spring-boot-starter-web:${springBootVersion}") {
+		exclude module: "spring-boot-starter-jetty"
+	}
+    providedRuntime("org.springframework.boot:spring-boot-starter-tomcat:${springBootVersion}")
+
+    compile("org.springframework.boot:spring-boot-starter-actuator:${springBootVersion}")
+    compile("org.springframework.boot:spring-boot-starter-aop:${springBootVersion}")
+    compile("org.springframework.boot:spring-boot-starter-test:${springBootVersion}")
+    compile("org.springframework.boot:spring-boot-starter-data-jpa:${springBootVersion}")
+    compile("org.springframework.data:spring-data-rest-webmvc")
+
+    compile("org.postgresql:postgresql:9.3-1102-jdbc41")
+//    compile("org.hsqldb:hsqldb")
+    
+    compile ("com.google.guava:guava:18.0")
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.11'
+}

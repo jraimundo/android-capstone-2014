@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SymptomsManagement</string>
+    <string name="title_activity_patients_list">PatientListActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_add_medication">Add Medication</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="title_frame_main">Symptoms Management</string>
+    <string name="patient_text_filter">Patient Filter...</string>
+    <string name="patient_checkin_button_string">New Check-In</string>
+    <string name="patient_settings_button_string">Settings</string>
+    <string name="patient_detail_mediations_section">Medications</string>
+    <string name="patient_detail_checkins_section">Check-Ins</string>
+    <string name="patient_checkin_pain_section">How bad is your mouth pain/sore throat?</string>
+    <string name="patient_checkin_pain_level_controlled">Well-controlled</string>
+    <string name="patient_checkin_pain_level_moderate">Moderate</string>
+    <string name="patient_checkin_pain_level_severe">Severe</string>
+    <string name="patient_checkin_eat_section">Does your pain stop you from eating/drinking?</string>
+    <string name="patient_checkin_eat_level_no">No</string>
+    <string name="patient_checkin_eat_level_some">Some</string>
+    <string name="patient_checkin_eat_level_cant_eat">I can\'t eat</string>
+    <string name="patient_checkin_medications_taken">Did you take your medication(s)?</string>
+    <string name="button_action_save">Save</string>
+    <string name="button_action_set_time">Set Time</string>
+    <string name="button_action_patient">Patient</string>
+    <string name="button_action_doctor">Doctor</string>
+    <string name="button_get_data_from_server">Get Data From Server</string>
+    <string name="button_alarm1">Alarm 1</string>
+    <string name="button_alarm2">Alarm 2</string>
+    <string name="button_alarm3">Alarm 3</string>
+    <string name="button_alarm4">Alarm 4</string>
+    <string name="switch_mediction_on">YES</string>
+    <string name="switch_mediction_off">NO</string>
+
+    <string-array name="test_list">
+        <item>item 1</item>
+        <item>item 2</item>
+        <item>item 3</item>
+        <item>item 4</item>
+        <item>item 5</item>
+    </string-array>
+
+    <string name="title_activity_medication_detail">MedicationDetailActivity</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_patient_new_checkin">New Check-In</string>
+    <string name="title_activity_patient_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+
+</resources>

@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="org.coursera.androidcapstone.symptomsmanagement.PatientsListActivity" >
+
+    <item
+        android:id="@+id/action_add_medication"
+        android:icon="@drawable/ic_action_add"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/action_add_medication"/>
+    
+</menu>
